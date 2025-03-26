@@ -1,5 +1,3 @@
-# aws-ec2-automation
-
 # EC2 Deployment Automation
 
 ## What This Does
