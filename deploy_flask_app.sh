@@ -2,7 +2,7 @@
 
 # --- Config ---
 KEY_NAME="cloudops-key"              # Your key pair name
-INSTANCE_ID="i-0fd142b20861c78c9"                       # Paste INSTANCE_ID from deploy_ec2.sh output
+INSTANCE_ID=""                       # Paste INSTANCE_ID from deploy_ec2.sh output
 
 # --- Get IP ---
 PUBLIC_IP=$(aws ec2 describe-instances \
