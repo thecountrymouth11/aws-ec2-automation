@@ -1,13 +1,14 @@
-# EC2 Deployment Automation
+# aws-ec2-automation
 
-## What This Does
-1. `deploy.sh` - My first script that:
-   - Logs into an EC2 server
-   - Runs system updates
-   - Checks the server is working
+scripts to launch ec2 instances and deploy a flask app. cloudops vibes all day.
 
-2. `deploy_ec2.sh` - My improved script that:
-   - Creates NEW EC2 servers automatically
-   - Sets up SSH access
-   - Shows how to connect to the new server
-   - Gives the command to delete the server when done
+## what’s here
+- `deploy.sh`: logs into an ec2 instance and updates it
+- `deploy_ec2.sh`: spins up a fresh ec2 instance
+- `app.py`: flask web app for ec2, runs on port 5000
+- `deploy_flask_app.sh`: deploys app.py to an ec2 instance (set INSTANCE_ID from deploy_ec2.sh output)
+
+## how to use
+1. run `deploy_ec2.sh` to get an instance id
+2. plug that id into `deploy_flask_app.sh` and run it
+3. hit the public ip:5000 in your browser
