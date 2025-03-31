@@ -1,0 +1,4 @@
+AMI_ID=ami-0e35ddab05955cf57
+INSTANCE_TYPE=t2.micro
+KEY_NAME=cloudops-key
+SECURITY_GROUP_ID=sg-0cdd48e63d80415b9
