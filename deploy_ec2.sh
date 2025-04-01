@@ -32,6 +32,8 @@ if [ -z "$PUBLIC_IP" ]; then
     exit 1
 fi
 
+echo "$INSTANCE_ID" > instance_id.txt
+
 echo "🔐 Securing AppServer..."
 ssh -i ~/"$KEY_NAME".pem -o "StrictHostKeyChecking=no" ubuntu@"$PUBLIC_IP" <<EOF
 sudo apt-get update -qq && sudo apt-get upgrade -y -qq
